@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Banking Digital Design System - Professional & Trustworthy */
+
+@layer base {
+  :root {
+    /* Core Banking Colors - Blues and Teals for Trust & Security */
+    --background: 240 10% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Banking Blue */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 214 95% 70%;
+
+    /* Secondary - Professional Teal */
+    --secondary: 185 84% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 215 16% 94%;
+    --muted-foreground: 215 13% 45%;
+
+    --accent: 185 45% 88%;
+    --accent-foreground: 215 25% 15%;
+
+    /* Success & Error for Banking */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 96%;
+    --ring: 214 84% 56%;
+
+    /* Banking Specific Variables */
+    --balance-positive: 142 71% 45%;
+    --balance-negative: 0 84% 60%;
+    --transaction-debit: 0 84% 60%;
+    --transaction-credit: 142 71% 45%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(214 95% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(185 84% 45%), hsl(185 95% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(185 84% 45%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(215 16% 98%) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -1px hsl(215 25% 15% / 0.06);
+    --shadow-elevated: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -2px hsl(215 25% 15% / 0.05);
+    --shadow-glow: 0 0 20px hsl(214 84% 56% / 0.3);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode for banking - maintain trust and professionalism */
+    --background: 215 28% 12%;
+    --foreground: 215 20% 90%;
+
+    --card: 215 25% 15%;
+    --card-foreground: 215 20% 90%;
+
+    --primary: 214 95% 70%;
+    --primary-foreground: 215 25% 15%;
+    --primary-glow: 214 100% 80%;
+
+    --secondary: 185 95% 60%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 215 25% 18%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 185 45% 25%;
+    --accent-foreground: 215 20% 90%;
+
+    --success: 142 71% 55%;
+    --success-foreground: 215 25% 15%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 215 25% 15%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 18%;
+    --ring: 214 95% 70%;
+
+    /* Dark Banking Variables */
+    --balance-positive: 142 71% 55%;
+    --balance-negative: 0 84% 65%;
+    --transaction-debit: 0 84% 65%;
+    --transaction-credit: 142 71% 55%;
+
+    /* Dark Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 95% 70%), hsl(214 100% 80%));
+    --gradient-secondary: linear-gradient(135deg, hsl(185 95% 60%), hsl(185 100% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 95% 70%) 0%, hsl(185 95% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(215 25% 15%) 0%, hsl(215 25% 18%) 100%);
+
+    /* Dark Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -1px hsl(0 0% 0% / 0.2);
+    --shadow-elevated: 0 10px 15px -3px hsl(0 0% 0% / 0.3), 0 4px 6px -2px hsl(0 0% 0% / 0.2);
+    --shadow-glow: 0 0 20px hsl(214 95% 70% / 0.4);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Banking Component Styles */
+  .banking-card {
+    @apply bg-card border border-border rounded-xl shadow-[var(--shadow-card)] 
+           backdrop-blur-sm transition-[var(--transition-smooth)]
+           hover:shadow-[var(--shadow-elevated)];
+    background: var(--gradient-card);
+  }
+
+  .banking-hero {
+    background: var(--gradient-hero);
+    @apply text-white;
+  }
+
+  .banking-button-primary {
+    background: var(--gradient-primary);
+    @apply text-primary-foreground border-0 shadow-[var(--shadow-card)]
+           hover:shadow-[var(--shadow-glow)] transition-[var(--transition-bounce)]
+           hover:scale-105;
+  }
+
+  .banking-button-secondary {
+    background: var(--gradient-secondary);
+    @apply text-secondary-foreground border-0 shadow-[var(--shadow-card)]
+           hover:shadow-[var(--shadow-elevated)] transition-[var(--transition-smooth)];
+  }
+
+  .balance-positive {
+    @apply text-[color:hsl(var(--balance-positive))];
+  }
+
+  .balance-negative {
+    @apply text-[color:hsl(var(--balance-negative))];
+  }
+
+  .transaction-credit {
+    @apply text-[color:hsl(var(--transaction-credit))];
+  }
+
+  .transaction-debit {
+    @apply text-[color:hsl(var(--transaction-debit))];
+  }
+
+  .banking-input {
+    @apply bg-input border-border focus:border-ring focus:shadow-[0_0_0_3px_hsl(var(--ring)_/_0.1)]
+           transition-[var(--transition-smooth)] rounded-lg;
+  }
+
+  .banking-table {
+    @apply bg-card border border-border rounded-lg overflow-hidden;
+  }
+
+  .banking-nav-item {
+    @apply relative flex items-center px-4 py-2 text-muted-foreground 
+           hover:text-foreground hover:bg-accent/50 rounded-lg
+           transition-[var(--transition-smooth)];
+  }
+
+  .banking-nav-item.active {
+    @apply text-primary bg-accent font-medium;
+  }
+
+  .banking-nav-item.active::after {
+    content: '';
+    @apply absolute left-0 top-0 w-1 h-full bg-primary rounded-r-full;
+  }
+}
